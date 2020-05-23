@@ -45,29 +45,29 @@ addSubmission(submissions, "Nancy", 68, "2020-01-01");
 console.log(submissions);
 
 
-// const deleteSubmissionByIndex = (array, index) => {
-//     // The `index` argument here is telling the splice function
-//     // the index at which to start changing the array.
-//     // The number 1 is the delete count: the number of elements
-//     // to delete using splice.
-//     // Your solution was hard-coded to delete four items starting
-//     // at index 4, every time. This solution here starts at 
-//     // whatever index we tell it, and only removes 1 item.
-//     array.splice(index, 1);
-// };
-// deleteSubmissionByIndex(submissions, 4);
-// //showing the object taken out of array
-// console.log(submissions);
+const deleteSubmissionByIndex = (array, index) => {
+    // The `index` argument here is telling the splice function
+    // the index at which to start changing the array.
+    // The number 1 is the delete count: the number of elements
+    // to delete using splice.
+    // Your solution was hard-coded to delete four items starting
+    // at index 4, every time. This solution here starts at 
+    // whatever index we tell it, and only removes 1 item.
+    array.splice(index, 1);
+};
+deleteSubmissionByIndex(submissions, 4);
+//showing the object taken out of array
+console.log(submissions);
 
 
 
-// const deleteSubmissionByName = (array, name) => {
-//     let index = array.indexOf(name);
-//     array.splice(index, 1);
-// };
-// deleteSubmissionByName(submissions, "Jill");
-// // Take Jill out of the array
-// console.log(submissions);
+const deleteSubmissionByName = (array, name) => {
+    let index = array.indexOf(name);
+    array.splice(index, 1);
+};
+deleteSubmissionByName(submissions, "Jill");
+// Take Jill out of the array
+console.log(submissions);
 
 
 
